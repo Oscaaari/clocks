@@ -8,11 +8,17 @@ import React from 'react';
 const megrim = Megrim({ subsets: ['latin'], weight: '400' });
 
 export default function ClockPage() {
-    const [time, setTime] = useState<string[]>(new Date().toLocaleTimeString("uk-GB", {hour12: false}).replace(/\D/g, "").split(""));
+    const [time, setTime] = useState<string[]>(["2","2","2","2","2","2"]);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setTime(new Date().toLocaleTimeString("uk-GB", {hour12: false}).replace(/\D/g, "").split(""));
+            setTime(new Intl.DateTimeFormat("en-GB", {
+                hour12: false,
+                timeZone: "Europe/Riga",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+            }).format(new Date()).replace(/\D/g, "").split(""));
         }, 1000);
 
         return () => clearInterval(intervalId);
