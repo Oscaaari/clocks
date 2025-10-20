@@ -13,11 +13,7 @@
     align-items: center;
     justify-items: center;
 
-    background: linear-gradient(
-        to bottom,
-        hsl(0, 0%, 46%) 0%,
-        hsl(0, 0%, 28%) 100%
-    );
+    background: linear-gradient(hsl(0, 0%, 46%),hsl(0, 0%, 28%));
 }
 
 .clock {
@@ -57,15 +53,18 @@
     border-top-right-radius: 3em;
     justify-self: center;
 }
+.top.dark > div {
+    background: none;
+    filter: blur(0px);
+}
 
 .top > div:nth-child(3), .top > div:nth-child(6) {
     width: 100px;
-    color: oklch(0.6549 0.2039 39.88 / 1);
-    text-shadow: var(--digit-glow);
 }
 
 .digitTube {
     position: relative;
+    z-index: 1;
 }
 
 .digit {
@@ -73,6 +72,13 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -55%);
+    pointer-events: none;
+}
+.seperator {
+    color: oklch(0.6549 0.2039 39.88 / 1);
+    text-shadow: var(--digit-glow);   
+    pointer-events: none;
+    z-index: 1;
 }
 
 .active {
@@ -82,6 +88,9 @@
 .inactive {
     color: oklch(0.4078 0 39.88);
     opacity: 0.2;
+}
+.inactive.dark {
+    opacity: 0.01;
 }
 
 .base {
@@ -96,4 +105,17 @@
     border-top-right-radius: 1em;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
+}
+
+
+/* Darkness area */
+.darkness {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
 }
