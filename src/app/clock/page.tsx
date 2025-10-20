@@ -80,7 +80,7 @@ export default function ClockPage() {
             <div 
                 className={styles.darkness}
                 style={{
-                    display: darknessOn ? '' : 'none',
+                    display: darknessOn ? '' : 'none', 
                 }}
             ></div>
         </div>
