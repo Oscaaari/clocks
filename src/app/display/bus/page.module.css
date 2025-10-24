@@ -35,7 +35,7 @@
     border: 35px solid oklch(0 0 0);
     border-left: 28px solid oklch(0 0 0);
     border-top: 28px solid oklch(0 0 0);
-    background-color: oklch(0.1584 0 0);
+    background-color: oklch(0.13 0 0);
     position: relative;
     overflow: hidden;
     filter: blur(0.8px);
@@ -48,7 +48,7 @@
     color: oklch(0.8137 0.162 78.36);
     font-weight: 800;
     white-space: nowrap;
-    font-size: 9.5em;
+    font-size: 1020%
 }
 .display p.static {
     justify-self: center;
@@ -61,7 +61,7 @@
     top: 0;
     left: 0;
     background-image:
-        repeating-linear-gradient(to right, oklch(0 0 0) 0 1px, transparent 7px 20px),
-        repeating-linear-gradient(to bottom, oklch(0 0 0) 0 1px, transparent 7px 20px);
+        repeating-linear-gradient(to right, oklch(0.13 0 0) 0 1px, transparent 7px 20px),
+        repeating-linear-gradient(to bottom, oklch(0.13 0 0) 0 1px, transparent 7px 20px);
     z-index: 1;
 }
