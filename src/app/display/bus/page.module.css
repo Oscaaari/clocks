@@ -48,7 +48,7 @@
     color: oklch(0.8137 0.162 78.36);
     font-weight: 800;
     white-space: nowrap;
-    font-size: 1020%
+    font-size: 160px;
 }
 .display p.static {
     justify-self: center;
