@@ -39,6 +39,7 @@
     position: relative;
     overflow: hidden;
     filter: blur(0.8px);
+    margin-top: -1px;
 }
 .display p {
     position: absolute;
@@ -47,7 +48,7 @@
     color: oklch(0.8137 0.162 78.36);
     font-weight: 800;
     white-space: nowrap;
-    font-size: 10em;
+    font-size: 9.5em;
 }
 .display p.static {
     justify-self: center;
