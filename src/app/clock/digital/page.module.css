@@ -1,0 +1,21 @@
+.mainContainer {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    /* background: linear-gradient(hsl(0, 0%, 46%),hsl(0, 0%, 28%)); */
+}
+
+.clock {
+    width: 1200px;
+    aspect-ratio: 3/1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    background-color: red;
+}
+
+.digit {
+    justify-self: center;
+}

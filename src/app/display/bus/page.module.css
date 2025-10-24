@@ -1,0 +1,66 @@
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainContainer > img {
+    width: 100%;
+    height: 135vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.displayContainer {
+    filter: blur(0px);
+    width: 60%;
+    height: auto;
+}
+.displayHolds {
+    width: 100%;
+    border-left: 100px solid oklch(0 0 0);
+    border-right: 100px solid oklch(0 0 0);
+    height: 10%;
+}
+.display {
+    width: 100%;
+    aspect-ratio: 3/1;
+    border: 35px solid oklch(0 0 0);
+    border-left: 28px solid oklch(0 0 0);
+    border-top: 28px solid oklch(0 0 0);
+    background-color: oklch(0.1584 0 0);
+    position: relative;
+    overflow: hidden;
+    filter: blur(0.8px);
+}
+.display p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: oklch(0.8137 0.162 78.36);
+    font-weight: 800;
+    white-space: nowrap;
+    font-size: 10em;
+}
+.display p.static {
+    justify-self: center;
+}
+
+.displayLines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:
+        repeating-linear-gradient(to right, oklch(0 0 0) 0 1px, transparent 7px 20px),
+        repeating-linear-gradient(to bottom, oklch(0 0 0) 0 1px, transparent 7px 20px);
+    z-index: 1;
+}

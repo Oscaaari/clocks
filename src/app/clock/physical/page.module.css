@@ -1,0 +1,60 @@
+.mainContainer {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    background: linear-gradient(oklch(0.7402 0.1052 8.12), oklch(0.6578 0.125 8.12));
+}
+
+.clock {
+    width: 650px;
+    aspect-ratio: 1/1;
+    border: 5px solid oklch(43.098% 0.1034 9.896);
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(150deg, oklch(67.244% 0.12507 8.104) 15%, oklch(52.278% 0.11504 9.504), oklch(67.244% 0.12507 8.104) 85%);
+}
+
+.digit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: 
+        rotate(calc(var(--digit) * 30deg - 90deg))
+        translate(290px)
+        rotate(calc(-1 * (var(--digit) * 30deg - 90deg)))
+        translate(-50%, -50%);
+    transform-origin: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.clockCenterPoint {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: oklch(43.098% 0.1034 9.896);
+}
+
+.clockHand {
+    position: absolute;
+  top: 50%;       /* vertically center in parent */
+  left: 50%;      /* horizontal center of parent (the pivot point of rotation) */
+    /* thickness of the hand */ 
+  
+  transform-origin: 0% 50%; /* middle-left of the hand */
+  transform: rotate(90deg) translateY(-50%); 
+    background-color: oklch(1 0 0);
+}
+.secondHand {
+    width: 250px;
+    height: 20px;
+}

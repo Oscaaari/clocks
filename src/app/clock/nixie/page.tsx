@@ -7,7 +7,7 @@ import React from 'react';
 
 const megrim = Megrim({ subsets: ['latin'], weight: '400' });
 
-export default function ClockPage() {
+export default function NixieTubeClockPage() {
     const [time, setTime] = useState<string[]>(["2","2","2","2","2","2"]);
     const [mouse, setMouse] = useState({ x: 0, y: 0 });
     const [darknessOn, setDarknessOn] = useState(false);
@@ -80,7 +80,7 @@ export default function ClockPage() {
             <div 
                 className={styles.darkness}
                 style={{
-                    display: darknessOn ? '' : 'none', 
+                    display: darknessOn ? '' : 'none',
                 }}
             ></div>
         </div>
