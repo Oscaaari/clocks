@@ -42,7 +42,7 @@ export default function BusDisplayPage() {
             text.style.transform = "translateY(-50%) translateX(0)";
 
             setTimeout(() => {
-                setCurrentText(new Date().toLocaleDateString());
+                setCurrentText(new Date().toLocaleDateString("en-GB"));
 
                 text.style.transition = "none";
                 text.style.transform = "translateY(-50%) translateX(0)";
