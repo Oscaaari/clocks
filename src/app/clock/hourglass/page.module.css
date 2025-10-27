@@ -18,7 +18,7 @@
     z-index: 0;
     color: black;
     font-size: 18vw;
-    animation: show-title 3s infinite linear;
+    animation: show-title 20s infinite linear;
 }
 @keyframes show-title {
     0% {  opacity: 1; }
@@ -39,11 +39,11 @@
     animation: rotate-cube 20s infinite linear;
 }
 @keyframes rotate-cube {
-    0% {  transform: rotateX(45deg) rotateY(45deg); }
-    25% {  transform: rotateX(-45deg) rotateY(45deg); }
-    50% {  transform: rotateX(-45deg) rotateY(-45deg); }
-    75% {  transform: rotateX(45deg) rotateY(-45deg); }
-    100% {  transform: rotateX(45deg) rotateY(45deg); }
+    0% {  transform: rotateX(30deg) rotateY(80deg); }
+    25% {  transform: rotateX(-45deg) rotateY(60deg); }
+    50% {  transform: rotateX(-20deg) rotateY(-35deg); }
+    75% {  transform: rotateX(70deg) rotateY(-90deg); }
+    100% {  transform: rotateX(30deg) rotateY(80deg); }
 }
 /* ----------- COMMON SIDE STYLING ----------- */
 .side {
